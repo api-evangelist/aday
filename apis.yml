@@ -1,8 +1,29 @@
 aid: aday
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aday.png
 name: Aday
-description: 'Aday is a company surfaced as a portfolio company of cowboy-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Aday is a direct-to-consumer sustainable fashion brand founded in 2015
+  in New York City by Nina Faulhaber and Meg He. It designs technical, long-lasting
+  capsule wardrobes built for outfit repetition, using custom recycled fabrics (including
+  post-consumer recycled plastic) and plant-based, beechwood-derived materials produced
+  in closed-loop processes. Aday has raised more than $10 million in venture capital,
+  is backed by Cowboy Ventures, and has been named one of Fast Company''s Most Innovative
+  Companies, with coverage in Vogue, Refinery29, and Conde Nast Traveler. The company
+  sells globally through its Shopify-powered storefront at thisisaday.com and does
+  not publish a public developer API. This profile was created as an API Evangelist
+  network stub from Cowboy Ventures'' portfolio and enriched with company identity
+  and domain-security signals; the storefront returned a Shopify "store is unavailable"
+  lock at the time of the enrichment probe.'
 url: https://raw.githubusercontent.com/api-evangelist/aday/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -16,6 +37,13 @@ modified: '2026-07-17'
 tags:
 - Company
 - Consumer
+- Fashion
+- Apparel
+- Ecommerce
+- Sustainability
+- Direct to Consumer
+- Retail
+- Shopify
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,4 +52,17 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://thisisaday.com
+  url: https://www.thisisaday.com
+- type: FAQ
+  url: https://www.thisisaday.com/pages/faq
+- type: Support
+  url: https://www.thisisaday.com/pages/faq
+- type: TermsOfService
+  url: https://www.thisisaday.com/pages/terms-and-conditions
+- type: DomainSecurity
+  url: security/aday-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
